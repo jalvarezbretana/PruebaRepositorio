@@ -19,7 +19,7 @@ public class Principal {
         GHRepository repo = github.createRepository(nombreRepo,descRepo,
                 "https://www.google.com/",false);
 
-        //
+        //Escribimos el codigo para el clone
         Git git = Git.cloneRepository()
                 .setURI( "https://github.com/eclipse/jgit.git" )
                 .setDirectory(new File("https://github.com/jalvarezbretana/basico-master.git"))
